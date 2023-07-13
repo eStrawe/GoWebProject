@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="content">
+    <h1>Product Management</h1>
+    <div class="product-table">
+      <div class="product-row header">
+        <div class="product-cell">Product Name</div>
+        <div class="product-cell">Category</div>
+        <div class="product-cell">Price</div>
+        <div class="product-cell">Price (including VAT)</div>
+      </div>
+      <div class="product-row" *ngFor="let product of products" [routerLink]="['/product', product.id]">
+        <div class="product-cell">{{ product.title }}</div>
+        <div class="product-cell category {{ product.categoryClass }}">{{ product.category }}</div>
+        <div class="product-cell">{{ product.price }} €</div>
+        <div class="product-cell">{{ product.price * 1.2 }} €</div> <!-- VAT calculation -->
+      </div>
+    </div>
+  </div>
+</div>

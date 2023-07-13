@@ -1,0 +1,190 @@
+.container {
+  display: flex;
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h1 {
+  text-align: center; 
+  color: #564aff; 
+  margin-bottom: 35px;
+  font-size: 1.5em; /* Adjust as needed */
+}
+ 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  padding-left: 0rem;
+  flex-direction: row; /* Reverse the order of elements */
+  justify-content: space-between; /* Distribute space evenly between elements */
+}
+
+.back-button {
+
+  margin-right: auto; /* Push the back button to the left */
+}
+.header h1 {
+  margin-right:20rem;
+}
+
+@media (max-width: 925px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header h1 {
+    margin-right:7rem;
+  }
+  
+
+}
+
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.description-category-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
+  margin-right: 2rem; 
+  justify-content: space-around;
+}
+
+
+
+.image-container {
+  width: 30%;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem;
+}
+
+.image-container img {
+  max-width: 100%;
+  
+  object-fit: contain;
+}
+
+.description {
+  width: 50%;
+}
+
+.description h2,
+.category h2 {
+  color: #564aff;
+  margin-bottom: 10px;
+  font-size: 0.8em; /* Adjust as needed */
+}
+
+.description p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.description input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px; /* Add right margin */
+}
+
+.description button {
+  width: 50%;
+  padding: 10px;
+  background-color: #564aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.description button:disabled {
+  background-color: gray;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category {
+  width: 50%;
+}
+
+.category {
+  text-align: left; 
+  border-radius: 15px; 
+  padding: 5px 10px; 
+  width:fit-content;
+  color: white; 
+  font-size: 0.8em; 
+}
+
+.category.mensclothing {
+  background-color: orange;
+}
+
+.category.jewelery {
+  background-color: green;
+}
+
+.category.electronics {
+  background-color: blue;
+}
+
+.category.womensclothing {
+  background-color: purple;
+}
+@media (max-width: 965px) {
+  .description-category-container {
+    flex-direction: column;
+    display: flex;
+    min-width: 100%; 
+    margin-left: 6rem; 
+    justify-content: right;
+  }
+  .description-category-container .description .category{
+    
+    margin-right: 0rem;
+  }
+  .image-container {
+    
+    padding: 1rem 2rem;
+    min-width: 15%;
+    min-height: 45%;
+  }
+  
+}
+
+
+@media (max-width: 617px) {
+  .product-info {
+    flex-direction: column;
+    display: flex; 
+    margin-left: 3rem; 
+   
+  }
+ .description-category-container{
+  margin-left: 0rem;
+ }
+ .price-container{
+    min-width: 150%;
+ }
+  
+}

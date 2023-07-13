@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    height: 100%;
+    margin: 0;
+  }
+  
+.dashboard {
+    width: 15%; 
+    background-color: #564aff; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px; 
+  }
+  
+  .logo-section img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-section h1 {
+    font-size: 1.2em; 
+    font-weight: 300; 
+  }
+  
+  .logo-section h1 span {
+    font-weight: bold; 
+  }
+  
+  .menu {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu h2 {
+    width: 80%;
+    text-align: left;
+    font-size: 0.8em; 
+    font-weight: 300; 
+    position: relative; 
+  }
+  
+  .menu h2.active:before {
+    content: '•'; 
+    position: absolute;
+    left: -30px; 
+    font-size: 2em; 
+    line-height: 0.8em; 
+  }
+  
+  .menu hr {
+    border: none;
+    border-top: 0.2px solid #9087ff; 
+    width: 80%;
+  }
+  
+  .content {
+    width: 100%; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content h1 {
+    color: #564aff; 
+    margin-bottom: 20px;
+  }
+  

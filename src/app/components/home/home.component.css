@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  height: 100%;
+  margin: 0;
+}
+
+.content h1 {
+  text-align: center; 
+  color: #564aff; 
+  margin-bottom: 20px;
+}
+ 
+
+.product-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr; 
+  padding: 15px; 
+  border-radius: 5px; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 10px;
+}
+
+.product-row.header {
+  background-color: #564aff; 
+  color: white;
+  font-weight: bold; 
+}
+
+.product-row:not(.header) {
+  color: gray; 
+}
+
+.product-cell {
+  text-align: left; 
+  font-size: 10px;
+}
+
+.category {
+  text-align: left; 
+  border-radius: 15px; 
+  padding: 5px 10px; 
+  width:fit-content;
+  color: white; 
+  font-size: 0.8em; 
+}
+
+.category.mensclothing {
+  background-color: orange;
+}
+
+.category.jewelery {
+  background-color: green;
+}
+
+.category.electronics {
+  background-color: blue;
+}
+
+.category.womensclothing {
+  background-color: purple;
+}
