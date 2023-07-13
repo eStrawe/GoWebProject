@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ProductComponent } from './components/product/product.component';
-import { BrowserModule } from '@angular/platform-browser';
+
 
 
 

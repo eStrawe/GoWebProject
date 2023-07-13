@@ -15,7 +15,7 @@
   text-align: center; 
   color: #564aff; 
   margin-bottom: 35px;
-  font-size: 1.5em; /* Adjust as needed */
+  font-size: 1.5em; 
 }
  
 .header {
@@ -24,13 +24,13 @@
   justify-content: center;
   width:100%;
   padding-left: 0rem;
-  flex-direction: row; /* Reverse the order of elements */
-  justify-content: space-between; /* Distribute space evenly between elements */
+  flex-direction: row; 
+  justify-content: space-between; 
 }
 
 .back-button {
 
-  margin-right: auto; /* Push the back button to the left */
+  margin-right: auto; 
 }
 .header h1 {
   margin-right:20rem;
@@ -88,7 +88,7 @@
 .category h2 {
   color: #564aff;
   margin-bottom: 10px;
-  font-size: 0.8em; /* Adjust as needed */
+  font-size: 0.8em; 
 }
 
 .description p {
@@ -100,7 +100,7 @@
   width: 50%;
   padding: 10px;
   margin-bottom: 10px;
-  margin-right: 20px; /* Add right margin */
+  margin-right: 20px; 
 }
 
 .description button {

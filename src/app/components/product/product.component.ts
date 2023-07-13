@@ -26,7 +26,7 @@ export class ProductComponent implements OnInit {
           ...data,
           categoryClass: data.category.toLowerCase().replace(/[^a-z0-9]/g, '') // We remove special characters so that it fits with one of the css categories class
         };
-        this.originalPrice = this.product.price; // To know if price was modified in the forms
+        this.originalPrice = this.product.price; // To know if the price was modified in the input price
       });
   }
   else {
